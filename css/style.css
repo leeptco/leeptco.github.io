@@ -1,0 +1,245 @@
+body {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+* {
+	margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/*header*/
+.header {
+  width: 100%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 50px;
+}
+.header_logo {
+  font-family: 'Ravie';
+  font-style: normal;
+  font-size: 24px;
+  height: 1em;
+  line-height: 2em;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  font-size: 20px;
+  /* text-transform: uppercase; */
+}
+.nav_link {
+  /* display: inline-block; */
+  font-size: 24px;
+  vertical-align: top;
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+  transition: color .2s linear;
+  height: 1em;
+  line-height: 2em;
+}
+.nav_link:hover {
+  color: #C4C4C4;
+}
+
+/*intro*/
+.privetstvie {
+	width: 100%;
+	height: 800px;
+	background: url("1.png") center
+	no-repeat;
+	-weblit-background-size: cover;
+  background-size: cover;
+}
+.privetstvie_logo {
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 37%;
+
+	font-family: 'Ravie';
+	font-style: normal;
+	font-size: 64px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*katalog*/
+.katalog {
+	width: 100%;
+	height: 1600px;
+	background-color: #E7D6DD;
+}
+.katalog_name {
+	position: absolute;
+	margin-left: 40%;
+	top: 1010px;
+}
+
+.kartochki {
+
+}
+.kartochki_item1 {
+	position: absolute;
+	width: 400px;
+	height: 580px;
+	top: 1150px;
+	background-color: #fff;
+}
+.kartochki_item2 {
+	position: absolute;
+	width: 400px;
+	height: 580px;
+	top: 1780px;
+	background-color: #fff;
+}
+.kartochki_item1:hover {
+  opacity: .5;
+}
+.kartochki_item2:hover {
+  opacity: .5;
+}
+.kartochki_text {
+	height:65px;
+	width: 320px;
+	margin-left: 40px;
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	font-weight: 700;
+	text-align: center;
+}
+.kartochki_size {
+	height:30px;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+	margin-top: 10px;
+	font-size: 20px;
+	color: #5E5E5E;
+}
+.price {
+	height:30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+/*registration*/
+.registration {
+  width: 100%;
+  height: 720px;
+  background-color: #E7D6DD;
+}
+.vhod_name {
+	position: absolute;
+	margin-left: 40%;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.block {
+  width: 375px;
+  height: 270px;
+  position: absolute;
+  top: 2800px;
+  left: 45.7%;
+  margin: -125px 0 0 -125px;
+  background-color: #505050;
+  border-radius: 25px;
+}
+.block1 {
+  width: 315px;
+  height: 60px;
+  position: absolute;
+  top: 170px;
+  left: 42%;
+  margin: -125px 0 0 -125px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+
+}
+.block2 {
+  width: 315px;
+  height: 60px;
+  position: absolute;
+  top: 280px;
+  left: 42%;
+  margin: -125px 0 0 -125px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+.knopka {
+  width: 260px;
+  height: 50px;
+  position: absolute;
+  top: 3120px;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  background-color: #505050;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+}
+.contact{
+  font-weight: 700;
+  position: absolute;
+	margin-left: 3%;
+  margin-top: 80px;
+}
+.contact_text {
+  position: absolute;
+	margin-left: 3%;
+  margin-top: 150px;
+}
+.block3 {
+  width: 525px;
+  height: 200px;
+  position: absolute;
+  top: 3250px;
+  right: 5%;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  text-align: center;
+}
+.knopka1 {
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  top: 3470px;
+  right: 17%;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
