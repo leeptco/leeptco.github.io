@@ -1,0 +1,306 @@
+/* Theming */
+@font-face {
+    font-family: "Jost";
+    src: url("/fonts/Jost-Regular.ttf");
+}
+
+@font-face {
+    font-family: "FatGrot";
+    src: url("/fonts/ofont.ru_FatGrot.ttf");
+}
+
+:root {
+    --color1: #010314;
+    --color2: #FFFFFF;
+    --color3: #77798F;
+    --color4: #674BFF;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: "Jost", sans-serif;
+    color: var(--color2);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.nav_text {
+    text-align: center;
+    color: var(--color3);
+    margin-top: 10px;
+}
+
+li {
+    margin: 0 25px;
+}
+
+.registr,
+.vhod,
+.button_vhod,
+.conctact_mail,
+.button_poisk,
+.registr_after:hover,
+.button_registration,
+.vhod_after:hover {
+    background-color: var(--color1);
+    border: solid 2px var(--color3);
+    /* border-radius: 35px; */
+    color: var(--color2);
+    padding: 8px 30px;
+    margin: 0 5px;
+}
+
+.intro_name,
+.work_name,
+.card-title,
+.about_name,
+.itog_text,
+.another_site_name,
+.registration_name {
+    font-family: "FatGrot";
+    font-size: 40px;
+    margin: 100px 0 25px;
+    text-transform: uppercase;
+    color: var(--color2);
+}
+
+.intro_text,
+.intro_name,
+form,
+.itog_name,
+.itog_text_another,
+.another_site_name {
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+.intro_container,
+.card,
+.itog_img,
+.intro_container_poisk,
+.registration_container {
+    border-radius: 50px;
+    background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0.00) 21.67%, #63E 69.34%, #FFF 100%);
+    margin-bottom: 100px;
+}
+
+.card {
+    box-shadow: 0px 4px 100px 0px rgba(102, 77, 255, 0.20);
+    border-top: 1px solid #664DFF;
+    border-bottom: 3px solid #664DFF;
+}
+
+.intro_container {
+    margin-top: 0;
+    padding-bottom: 70px;
+}
+
+.intro_container_poisk {
+    margin-top: 0;
+    padding-bottom: 350px;
+}
+
+.intro_poisk,
+button,
+.button_poisk,
+.button_vhod,
+.conctact_mail,
+.registration_form,
+.button_registration {
+    border-radius: 35px;
+}
+
+.button_poisk {
+    margin: 0 30px;
+    margin-right: 5%;
+}
+
+.work_text {
+    margin: 0 10% 3%;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-text,
+.about_text {
+    color: var(--color3);
+    text-align: justify;
+    margin: 0 12% 5%;
+}
+
+.about_container,
+.itog_container,
+.another_site_container {
+    border-radius: 42px;
+    border-top: 1px solid #664DFF;
+    border-bottom: 3px solid #664DFF;
+    background: #010314;
+    box-shadow: 0px 4px 100px 0px rgba(102, 77, 255, 0.20);
+}
+
+.about_section,
+.another_site_section {
+    background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0.00) 47.81%, rgba(36, 18, 85, 0.36) 56.15%, rgba(36, 18, 85, 0.36) 65.52%, rgba(102, 51, 238, 0.68) 79.58%, #FFF 93.65%);
+}
+
+.about_section {
+    padding-bottom: 100px;
+}
+
+.about_name {
+    margin-left: 12%;
+    margin-top: 70px;
+}
+
+.footer_container {
+    background-color: var(--color1);
+    padding: 35px;
+}
+
+.pochta {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pochta_form {
+    display: flex;
+}
+
+.podskazka {
+    color: var(--color3);
+    font-size: 14px;
+    margin: 0 8% 10px;
+}
+
+.conctact_mail::placeholder {
+    color: var(--color3);
+}
+
+.conctact_mail {
+    padding-right: 100px;
+}
+
+.button_vhod:hover,
+.registr:hover,
+.vhod:hover {
+    background-color: var(--color4);
+    border: solid 2px var(--color4);
+}
+
+.button_poisk {
+    background-color: none;
+}
+
+.button_poisk:hover {
+    background-color: var(--color3);
+    border: solid 2px var(--color4);
+}
+
+li:hover {
+    color: var(--color2);
+}
+
+.itog_name {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.itog_img {
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    margin-left: 20%;
+}
+
+.itog_container {
+    margin: 100px;
+    margin-top: -400px;
+}
+
+.itog_text,
+.itog_img {
+    margin-top: 30px;
+}
+
+.itog_text_another {
+    padding-bottom: 60px;
+}
+
+.some_words {
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.another_site_container {
+    margin: 100px;
+}
+
+.another_site_name {
+    margin-top: 70px;
+}
+
+.another_site_spisok_a {
+    color: var(--color2);
+    margin-left: 50px;
+}
+
+.another_site_spisok {
+    margin-left: 5%;
+    padding-bottom: 60px;
+}
+
+.another_site_section {
+    padding-bottom: 50px;
+}
+
+.registr_after,
+.vhod_after {
+    background-color: var(--color3);
+    border: solid 2px var(--color3);
+    color: var(--color2);
+    padding: 8px 30px;
+    margin: 0 5px;
+}
+
+.registration_form {
+    margin: 20px auto;
+    width: 60%;
+}
+
+.button_registration:hover {
+    background-color: var(--color4);
+    border: solid 2px var(--color4);
+}
+
+.button_registration {
+    padding: 12px 60px;
+}
+
+.registration_container {
+    padding-bottom: 30px;
+}
+.intro_forn_button {
+    background-color: var(--color1);
+}
