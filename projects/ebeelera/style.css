@@ -1,0 +1,227 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/century_gothic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/century_gothic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/century_gothic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/century_gothic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/century_gothic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/century_gothic.svg#century_gothic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Century Gothic Gras';
+	src: url('../fonts/century_gothic_gras.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/century_gothic_gras.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/century_gothic_gras.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/century_gothic_gras.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/century_gothic_gras.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/century_gothic_gras.svg#century_gothic_gras') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Century Gothic Gras Italique';
+	src: url('../fonts/century_gothic_gras_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/century_gothic_gras_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/century_gothic_gras_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/century_gothic_gras_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/century_gothic_gras_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/century_gothic_gras_italique.svg#century_gothic_gras_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Century Gothic Italique';
+	src: url('../fonts/century_gothic_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/century_gothic_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/century_gothic_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/century_gothic_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/century_gothic_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/century_gothic_italique.svg#century_gothic_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+:root {
+    --color1: #eeeeef;
+    --color2: #403f3f;
+    --color3: #6a6abf;
+    --color4:#838383;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color2);
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: "Century Gothic", "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background-color: var(--color2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    color: var(--color1);
+    font-size: 47px;
+    /* margin-left: 50px; */
+    margin-left: 5%;
+    margin-bottom: 10px;
+    font-family: 'Ravie', sans-serif;
+}
+
+.navbar-logo {
+    color: var(--color1);
+    font-size: 40px;
+    font-family: 'Ravie', sans-serif;
+    padding-left: 5%;
+    margin-right: 8%;
+}
+
+.nav-link {
+    padding-left: 5%;
+    margin: 10px;
+
+}
+
+.nav-link:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+
+.intro_box {
+    border: 3px solid var(--color2);
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.intro_line {
+    border-bottom: 2px solid var(--color2);
+    /* padding-top: 10px; */
+}
+
+.intro_logo {
+    font-size: 40px;
+    font-family: 'Ravie', sans-serif;
+    padding: 10px 0 10px;
+}
+
+.intro_text {
+    font-size: 24px;
+    padding: 20px 5px 20px;
+    text-align: justify;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.kat_name,
+.dostavka_name,
+.cont_name {
+    font-weight: 800;
+    font-size: 26px;
+    padding-bottom: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.card {
+    margin: 25px;
+}
+
+p {
+    margin-top: 0.4em;
+    /* Отступ сверху */
+    margin-bottom: 1em;
+    /* Отступ снизу */
+}
+
+.contact {
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 8px 10px 5px 2px rgba(60, 60, 60, 0.2);
+}
+
+.card-title,
+h5 {
+    color: var(--color2);
+}
+
+.carousel_img {
+    border-radius: 15px;
+}
+
+.list_name {
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.list_opisanie {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+h5 {
+    font-weight: 800;
+}
+
+.btn {
+    background-color: var(--color2);
+    border: 2px solid var(--color2);
+}
+
+.contact_img {
+    width: 40px;
+    margin: 10px;
+}
+
+.inst,
+.tg {
+    display: inline-block;
+}
+
+.inst_text,
+.tg_text {
+    color: var(--color2);
+}
+
+.contact_icons {
+    display: flex;
+    justify-content: space-around;
+}
+.list_small_text {
+    font-size: 14px;
+    color: var(--color4);
+}
