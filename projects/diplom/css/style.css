@@ -1,0 +1,325 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --color1: #eeeeef;
+    --color2: #403f3f;
+    --color3: #6a6abf;
+    --color4: rgb(184, 184, 184);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: "Century Gothic", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background-color: var(--color2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    color: var(--color1);
+    font-size: 47px;
+    /* margin-left: 50px; */
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.navbar-logo {
+    color: var(--color1);
+    font-size: 40px;
+    padding-left: 5%;
+    margin-right: 8%;
+}
+
+.nav-link {
+    padding-left: 5%;
+    margin: 10px;
+}
+
+.nav-link:hover,
+.footer-link:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+
+.intro_box,
+.about_box {
+    border: 3px solid var(--color2);
+    border-radius: 10px;
+    padding: 30px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.intro_line {
+    border-bottom: 2px solid var(--color2);
+    /* padding-top: 10px; */
+}
+
+.intro_text {
+    /* padding-top: 10px; */
+    padding: 50px 10px 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn_intro {
+    margin: 5px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+
+.intro_img img {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.section {
+    padding-top: 50px;
+}
+
+.kat_name,
+.about_name,
+.registration_name {
+    font-weight: 800;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.card-text {
+    text-align: justify;
+    margin: 10px 10px 20px;
+    /* margin-bottom: 20px; */
+}
+
+.footer_ul_li {
+    display: inline;
+    padding: 20px 0;
+}
+
+.pochta {
+    margin-right: 80px;
+}
+
+.pochta_button {
+    margin: 0 20px;
+}
+
+.pochta_form {
+    padding-right: 70px;
+}
+
+.pochta_text {
+    font-size: 12px;
+    color: var(--color4);
+}
+
+.footer-link {
+    color: var(--color4);
+}
+
+/* registration.php */
+.button_registration {
+    color: var(--color2);
+    font-size: 18px;
+    height: 50px;
+    font-size: large;
+    border-radius: 8px;
+    width: 300px;
+    border: 2px solid var(--color2);
+}
+
+.button_registration:hover,
+.button_filter:hover {
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+.button_filter {
+    width: 200px;
+    font-size: 18px;
+    height: 30px;
+    font-size: large;
+}
+
+.katalog_work_old {
+    margin: 0 200px;
+}
+
+.product_wrapper {
+    float: inline-start;
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.table td {
+    border-bottom: #F0F0F0 1px solid;
+    padding: 10px;
+}
+
+
+.test_card_span {
+    font-size: 11px;
+    line-height: 10px;
+    background: #3e1ef6;
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+.cart .remove {
+    background: none;
+    border: none;
+    color: #0067ab;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.cart .remove:hover {
+    text-decoration: underline;
+}
+
+.name,
+.price {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 8px;
+    text-align: center;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.buy {
+    margin: auto;
+}
+
+.td_name {
+    font-weight: 700;
+}
+
+strong {
+    font-size: 22px;
+}
+
+
+
+
+.form_make_MK1 {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.form_make_MK {
+    /* margin: 50px; */
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    /* Цвет фона */
+    color: white;
+    /* Цвет текста */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message_box,
+.box1 {
+    margin: 10px auto;
+    border: 1px solid #2b772e;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #2b772e;
+    width: 700px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privet_organizer_name {
+    font-size: 60px;
+}
+
+.work_with_card_delete {
+    color: red;
+}
+
+.card .date {
+    font-size: 14px;
+    ;
+}
+
+.card .card-title,
+.card .price {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.card .card-title {
+    margin-top: 10px;
+}
+
+.card .ssilka {
+    margin: 15px;
+}
+
+.katalog_btn {
+    margin-bottom: 20px;
+}
+
+.btn_buy_MK {
+    display: flex;
+    justify-content: flex-end;
+}
