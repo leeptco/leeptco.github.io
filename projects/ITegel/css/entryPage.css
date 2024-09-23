@@ -1,0 +1,376 @@
+body {
+  font-family: 'century gothic', sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+* {
+    margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/*header*/
+.header {
+  width: 100%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 90px;
+  background-color: #E1EAF9;
+}
+.header_logo {
+  position: absolute;
+  top: 20px;
+  left: 95px;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  /* text-transform: uppercase; */
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  top: 30px;
+}
+.nav_link {
+  color: #003D56;
+  text-decoration: none;
+  transition: color .2s linear;
+  position: absolute;
+  left: 160px;
+}
+.nav_link:hover {
+  color: #0372FF;
+}
+.poisk {
+    width: 200px;
+    height: 32px;
+    position: absolute;
+    top: 30px;
+    right: 295px;
+    border: 1px solid #787CA9;
+    /* margin: -125px 0 0 -125px; */
+    background-color: #E1EAF9;
+    border-radius: 10px;
+    color: #787CA9;
+    font-size: 16px;
+}
+.poisk1 {
+    width: 175px;
+    color: #787CA9;
+    margin-left: 10px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vhod {
+  font-family: 'century gothic', sans-serif;
+  width: 95px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  right: 95px;
+  border: 1px solid #0372FF;
+  /* margin: -125px 0 0 -125px; */
+  background-color: #E1EAF9;
+  border-radius: 10px;
+  color: #0372FF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  text-decoration: none;
+}
+.vhod:hover {
+  background-color: #0372FF;
+  color: #fff;
+}
+
+.block1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 640px;
+  height: 515px;
+  left: calc(50% - 640px/2 - 2px);
+  top: 151px;
+
+  border: 3px solid #1AD079;
+  border-radius: 20px;
+}
+
+.block2{
+  position: absolute;
+  width: 582px;
+  height: 469px;
+  left: calc(50% - 640px/2 + 27px);
+  top: 175px;
+
+  background: #E1EAF9;
+  border-radius: 20px;
+}
+
+.buttonSign {
+  position: absolute;
+    width: 141px;
+    height: 24px;
+    left: calc(50% - 640px/2 + 113px);
+    top: 209px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-decoration: none;
+
+    color: #0372FF;
+
+}
+
+
+.nameBlock {
+  position: absolute;
+width: 120px;
+height: 20px;
+left: calc(50% - 640px/2 + 113px);
+top: 291px;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: rgba(0, 61, 86, 0.8);
+}
+
+.nameBlockData {
+  position: absolute;
+width: 410px;
+height: 58px;
+left: calc(50% - 640px/2 + 113px);
+top: 318px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+.mailBlock {
+    position: absolute;
+width: 51px;
+height: 20px;
+left: calc(50% - 640px/2 + 113px);
+top: 390px;
+
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: rgba(0, 61, 86, 0.8);
+}
+
+.mailBlockData{
+    position: absolute;
+width: 410px;
+height: 58px;
+left: calc(50% - 640px/2 + 113px);
+top: 415px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+.passwordBlock {
+  position: absolute;
+width: 51px;
+height: 20px;
+left: calc(50% - 640px/2 + 113px);
+top: 390px;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: rgba(0, 61, 86, 0.8);
+}
+
+.passwordBlockData {
+  position: absolute;
+width: 410px;
+height: 58px;
+left: calc(50% - 640px/2 + 113px);
+top: 415px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+
+.passwordCheckBlock {
+  position: absolute;
+  width: 91px;
+  height: 20px;
+  left: calc(50% - 640px/2 + 113px);
+  top: 598px;
+  font-size: 16px;
+  line-height: 20px;
+/* identical to box height */
+
+
+color: rgba(0, 61, 86, 0.8);
+}
+
+.passwordCheckBlockData {
+  position: absolute;
+width: 410px;
+height: 58px;
+left: calc(50% - 640px/2 + 113px);
+top: 623px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+.buttonRegister {
+  position: absolute;
+  width: 66px;
+  height: 24px;
+  left: calc(50% - 640px/2 + 385px);
+  top: 209px;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.buttonRegisterReady {
+  position: absolute;
+  width: 218px;
+  height: 62px;
+  left: calc(50% - 640px/2 + 208px);
+  top: 542px;
+  border: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #003D56;
+}
+
+.circleOneSignPage {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  margin-left: 39px;
+  margin-top: 126px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(3, 114, 255, 0.3835) 0%, rgba(3, 114, 255, 0) 100%);
+}
+
+.circleTwoSignPage {
+  position: absolute;
+  width: 499px;
+  height: 499px;
+  left: 1020px;
+  margin-top: 180px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 208, 121, 0.416) 0%, rgba(26, 208, 121, 0) 100%);
+}
+
+
+/*обновления после 5:07 утра*/
+/*строка поиска*/
+.container-1{
+  width: 200px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 30px;
+  left: 930px;
+}
+.container-1 input#search{
+  width: 200px;
+  height: 35px;
+  background: #E1EAF9;
+  border: 1px solid #787CA9;
+  /* border: none; */
+  font-size: 10pt;
+  float: left;
+  color: #787CA9;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 .icon{
+  position: absolute;
+  margin-left: 5px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+}
+
+/*красота с самими блоками для ввода*/
+input[type=text] {
+    width: 410px;
+    box-sizing: border-box;
+    border: 1px solid #787ca9;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e1eaf9;
+    /* background-image: url('img/lupa.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* input[type=text]:focus {
+    width: 100%;
+} */
+
+input[type=email] {
+    width: 410px;
+    box-sizing: border-box;
+    border: 1px solid #787ca9;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e1eaf9;
+    /* background-image: url('img/lupa.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=password] {
+    width: 410px;
+    box-sizing: border-box;
+    border: 1px solid #787ca9;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e1eaf9;
+    /* background-image: url('img/lupa.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:hover {
+    background-color: #fff;
+}
+input[type=password]:hover {
+    background-color: #fff;
+}
+input[type=email]:hover {
+    background-color: #fff;
+}
