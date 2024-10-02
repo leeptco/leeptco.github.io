@@ -1,0 +1,144 @@
+* {
+    color: rgb(39, 51, 155);
+    font-family: Montserrat;
+}
+
+
+
+header {
+    margin-top: 50px;
+}
+
+
+.container_center {
+    display: flex;
+    /* Используем flexbox для расположения элементов */
+    justify-content: center;
+    /* Центрируем контейнер по горизонтали */
+    width: 100%;
+    /* Ширина контейнера на всю ширину экрана */
+}
+
+.box {
+    display: flex;
+    /* Используем flexbox для внутреннего расположения */
+    justify-content: space-between;
+    /* Распределяем элементы по краям */
+    align-items: center;
+    /* Центрируем содержимое по вертикали */
+    width: 100%;
+    /* Задаем ширину на всю доступную область */
+}
+
+.box_header {
+    margin: 10px;
+    /* Отступы между заголовками блоков */
+}
+
+.text_center {
+    text-align: left;
+    /* Текст выравнивается влево для лучшей читаемости */
+}
+
+.img_id {
+    width: 200px;
+    /* Устанавливаем ширину изображения (можно изменить) */
+    height: auto;
+    /* Сохраняем пропорции изображения */
+}
+
+/* Новый класс для выравнивания имени и фото в одну строку */
+.name_and_photo {
+    display: flex;
+    /* Используем flexbox для расположения имени и фото в строку */
+    align-items: center;
+    /* Центрируем по вертикали */
+}
+
+.contact_info {
+    text-align: right;
+    /* Выравнивание текста контактов вправо */
+}
+
+.text_fio {
+    font-size: clamp(15px, 32px, 40px);
+    letter-spacing: 6px;
+    font-weight: 700;
+}
+
+.text_intro {
+    font-size: clamp(12px, 20px, 35px);
+    color: rgb(143, 150, 209);
+    text-align: left;
+}
+
+.create-line {
+    width: 100%;
+    border-top: 3px solid #27339B;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.create-line1 {
+    border-top: 2px solid #8F96D1;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.project_head {
+    font-size: clamp(32px, 72px, 80px);
+    letter-spacing: 6px;
+    font-weight: 500;
+    margin: 100px auto 50px;
+}
+
+.project_name {
+    font-size: clamp(18px, 40px, 56px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project_site_photo {
+    height: 350px;
+}
+.margin_left {
+    margin-left: 50px;
+}
+.margin_right {
+    margin-right: 50px;
+}
+
+.project_inner {
+    text-align: justify;
+    font-weight: 500;
+}
+
+@media (max-width: 1020px) {
+    .project_box {
+        flex-direction: column; /* Изменяем направление на вертикальное */
+        align-items: center; /* Выравниваем элементы по левому краю */
+        margin-bottom: 20px; /* Добавляем отступ между проектами */
+    }
+    .margin_left {
+        margin-left: 0; /* Убираем отступ слева на маленьких экранах */
+        margin-top: 30px; /* Добавляем отступ сверху для фото */
+    }
+    .margin_right {
+        margin-right: 0; 
+        margin-bottom: 30px;
+    }
+    .project_name {
+        text-align: center;
+    }
+    .project_site_photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(39, 51, 155);
+}
