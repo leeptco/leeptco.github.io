@@ -142,3 +142,6 @@ a {
     text-decoration: none;
     color: rgb(39, 51, 155);
 }
+.container {
+    margin-left: 7vw;
+}
