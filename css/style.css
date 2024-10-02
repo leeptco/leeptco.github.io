@@ -9,11 +9,9 @@ header {
 
 .container_center {
     display: flex;
-    /* Используем flexbox для расположения элементов */
     justify-content: center;
     /* Центрируем контейнер по горизонтали */
     width: 100%;
-    /* Ширина контейнера на всю ширину экрана */
 }
 
 .box {
@@ -147,9 +145,10 @@ a {
 }
 .image-wrapper {
     position: relative; /* Устанавливаем относительное позиционирование для родителя */
+}
+.img-fluid {
     height: 350px;
 }
-
 .image-wrapper img {
     transition: transform 0.3s ease, filter 0.3s ease; 
 }
