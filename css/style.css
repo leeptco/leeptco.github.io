@@ -3,12 +3,9 @@
     font-family: Montserrat;
 }
 
-
-
 header {
     margin-top: 50px;
 }
-
 
 .container_center {
     display: flex;
@@ -42,17 +39,11 @@ header {
 
 .img_id {
     width: 200px;
-    /* Устанавливаем ширину изображения (можно изменить) */
     height: auto;
     /* Сохраняем пропорции изображения */
 }
-
-/* Новый класс для выравнивания имени и фото в одну строку */
-.name_and_photo {
     display: flex;
-    /* Используем flexbox для расположения имени и фото в строку */
     align-items: center;
-    /* Центрируем по вертикали */
 }
 
 .contact_info {
@@ -154,6 +145,7 @@ a {
 }
 .image-wrapper {
     position: relative; /* Устанавливаем относительное позиционирование для родителя */
+    height: 350px;
 }
 
 .image-wrapper img {
