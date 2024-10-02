@@ -134,6 +134,16 @@ header {
         height: auto;
     }
 }
+@media (min-width: 1700px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1600px;
+    }
+}
+@media (min-width: 2200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 2048px;
+    }
+}
 
 footer {
     margin-bottom: 50px;
@@ -142,6 +152,5 @@ a {
     text-decoration: none;
     color: rgb(39, 51, 155);
 }
-.container {
-    margin-left: 7vw;
-}
+
+
