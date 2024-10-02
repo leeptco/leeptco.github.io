@@ -152,5 +152,17 @@ a {
     text-decoration: none;
     color: rgb(39, 51, 155);
 }
+.image-wrapper {
+    position: relative; /* Устанавливаем относительное позиционирование для родителя */
+}
+
+.image-wrapper img {
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1); /* Увеличиваем изображение на 10% */
+    filter: brightness(0.7); /* Затемняем изображение */
+}
 
 
