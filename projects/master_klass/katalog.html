@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Каталог товаров</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+            <a href="#" class="navbar-logo">MASTER-CLASS</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item text-uppercase"><a href="index.html#about_us" class="nav-link">о нас</a></li>
+                    <li class="nav-item text-uppercase"><a href="katalog.html" class="nav-link">каталог</a> </li>
+                    <li class="nav-item text-uppercase"><a href="login_client.html" class="nav-link">вход</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a href="cart.html" class="nav-link">корзина</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<div class="section">
+		<div class="container">
+
+			<div class="kat_name text-uppercase text-center">
+				Каталог мастер-классов
+			</div>
+
+			<form id="filterForm">
+				<select id="MK_category" name="MK_category">
+					<option value="all">Все</option>
+					<option value="knit">Вязание</option>
+					<option value="flower">Флористика</option>
+					<option value="ceramic">Керамика</option>
+					<option value="draw">Рисование</option>
+					<option value="photo">Фотография</option>
+					<option value="cook">Кулинария</option>
+					<option value="dance">Танцы</option>
+					<option value="sport">Спорт</option>
+					<option value="business">Бизнес</option>
+					<option value="another">Другое</option>
+				</select>
+				<select id="MK_price" name="MK_price">
+					<option value="all">Все</option>
+					<option value="0-1000">0 - 1000 руб.</option>
+					<option value="1000-2000">1000 руб. - 2000 руб.</option>
+					<option value="2000-5000">2000 руб. - 5000 руб.</option>
+					<option value="5000-100000">от 5000 руб.</option>
+				</select>
+				<select id="MK_date" name="MK_date">
+					<option value="any">Любая дата</option>
+					<option value="weekend">Ближайшие выходные</option>
+					<option value="month">Ближайший месяц</option>
+				</select>
+				<input type="button" value="Filter" onclick="applyFilter()" class="button_filter">
+			</form>
+			<br> <br>
+
+			<div class='row row-cols-1 row-cols-md-3 g-4' id="productsContainer"></div>
+
+			<script>
+				// Загрузка карточек при загрузке страницы
+				window.onload = function () {
+					applyFilter();
+				};
+
+				function applyFilter() {
+					// Получить значения фильтров 
+					var category = document.getElementById('MK_category').value;
+					var price = document.getElementById('MK_price').value;
+					var date = document.getElementById('MK_date').value;
+
+					// Получить текущую дату
+					var today = new Date();
+					var year = today.getFullYear();
+					var month = today.getMonth() + 1; // Добавляем 1, так как месяцы в JavaScript нумеруются с 0
+					var day = today.getDate();
+					// Преобразуем дату в формат "yyyy-mm-dd"
+					var currentDate = year + '-' + month + '-' + day;
+
+					// Выполнить асинхронный запрос 
+					var xhr = new XMLHttpRequest();
+					xhr.onreadystatechange = function () {
+						if (xhr.readyState === 4 && xhr.status === 200) {
+							// Обработать полученные данные и отобразить на странице 
+							document.getElementById('productsContainer').innerHTML = xhr.responseText;
+						}
+					};
+
+					// Подготовить данные для отправки 
+					var data = 'MK_category=' + category + '&MK_price=' + price + '&MK_date=' + date + '&currentDate=' + currentDate;
+
+					// Отправить запрос методом POST на ваш серверный скрипт 
+					xhr.open('POST', 'filter.php', true);
+					xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+					xhr.send(data);
+				} 
+			</script>
+		</div>
+
+
+		<br><br><br><br><br>
+	</div>
+	</div>
+</body>
+
+</html>
