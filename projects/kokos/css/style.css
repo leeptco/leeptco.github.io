@@ -1,12 +1,11 @@
-/* Theming */
-@font-face {
-    font-family: "Jost";
-    src: url("/fonts/Jost-Regular.ttf");
-}
 
 @font-face {
-    font-family: "FatGrot";
-    src: url("/fonts/ofont.ru_FatGrot.ttf");
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Regular.ttf') format('truetype'); /* Для современных браузеров */
+}
+@font-face {
+    font-family: 'FatGrot';
+    src: url('../fonts/ofont.ru_FatGrot.ttf') format('truetype'); /* Для современных браузеров */
 }
 
 :root {
