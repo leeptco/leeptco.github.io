@@ -1,1 +1,26 @@
+/* $main-color: rgb(56, 56, 56); */
 
+* {
+    /* color: $main-color; */
+    /* font-family: OpenSans; */
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+}
+
+p {
+    margin-bottom: 0 !important;
+    /* Используем !important, чтобы переопределить стили Bootstrap */
+}
+.header {
+    width: 1115px;
+}
+
+/* Пример дополнительных стилей */
+.navbar {
+    padding: 10px; /* Настройте отступы по своему усмотрению */
+}
+
+.navbar-nav .nav-link {
+    margin-left: 20px; /* Отступ между пунктами меню */
+}
