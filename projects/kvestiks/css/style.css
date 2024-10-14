@@ -3,24 +3,138 @@
 * {
     /* color: $main-color; */
     /* font-family: OpenSans; */
-    font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgb(56, 56, 56);
+    font-size: 14px;
 }
 
-p {
+p,
+ul {
     margin-bottom: 0 !important;
     /* Используем !important, чтобы переопределить стили Bootstrap */
 }
-.header {
-    width: 1115px;
+
+.nav_text {
+    font-size: 10px;
+    font-weight: 600;
 }
 
-/* Пример дополнительных стилей */
-.navbar {
-    padding: 10px; /* Настройте отступы по своему усмотрению */
+a {
+    text-decoration: none !important;
 }
 
-.navbar-nav .nav-link {
-    margin-left: 20px; /* Отступ между пунктами меню */
+.navbar-toggler {
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+header {
+    min-height: 44px;
+}
+
+.card__title {
+    font-weight: 800;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    header {
+        min-height: 56px;
+    }
+
+    .card__status {
+        top: 8px;
+        right: 16px;
+    }
+
+    .inner {
+        max-width: 77.5% !important;
+    }
+
+    .card__title {
+        position: absolute;
+        top: 24px;
+        left: 32px;
+        right: auto;
+        z-index: 2;
+        font-size: 36px;
+    }
+    /* .card__img-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 40%;
+        width: 50%;
+        /* Задаем ширину градиента 50%
+        height: 100%;
+        /* Задаем высоту градиента на 100% 
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        /* Градиент от белого к прозрачному 
+        z-index: 1;
+        /* Устанавливаем z-index выше изображения 
+    } */
+}
+
+@media (max-width: 577px) {
+
+    .card__status {
+        top: 8px;
+        margin-top: 8px;
+        left: 16px;
+        right: auto;
+    }
+
+    .card__title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .card__img-wrapper::before {
+        background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+}
+
+.breadcrumps {
+    color: #424242;
+}
+
+.card__status {
+    position: absolute;
+    font-size: 10px;
+    padding: 0px 11px;
+    border-radius: 3px;
+}
+
+
+.card__img-wrapper {
+    position: relative;
+    display: inline-block; /* Ограничивает размер контейнера размером изображения */
+}
+
+.card__img {
+    display: block;
+    width: auto; /* Сохраняем естественный размер изображения */
+    height: auto;
+    max-width: 100%; /* Ограничиваем изображение, чтобы оно не превышало ширину контейнера */
+}
+
+.card__img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 1;
+    pointer-events: none; /* Градиент не перекрывает взаимодействие с изображением */
+}
+
+.card__inner {
+    position: absolute;
+    top: 100px;
+    left: 0;
 }
