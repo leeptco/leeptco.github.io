@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в личный кабинет</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a class="header__link" href="index.html#top">
+                    <img src="img/sitin_logo120.png" alt="Логотип">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a class="header__nav-link" href="index.html#course">Каталог курсов</a></li>
+                    <li><a class="header__nav-link" href="index.html#about">О проекте</a>
+                    </li>
+                    <li><a class="header__nav-link" href="index.html#partners">Сотрудничество</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search hidden-on-small">
+                <img src="img/lupa.png" alt="Иконка поиска" class="header__icon">
+                <input type="search" class="header__input" placeholder="Поиск...">
+            </div>
+            <button class="header__button">
+                <a class="header__button-link" href="entry.html">Войти</a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="entry">
+            <div class="entry__box">
+                <div class="entry__box__title">
+                    <a class="entry__box__title-disable" href="entry.html">Войти</a>
+                    <a class="entry__box__title-active" href="registration.html">Регистрация</a>
+                </div>
+                <div class="entry__box__input">
+                    <p>ФИО</p>
+                    <input type="text">
+                    <p>Почта</p>
+                    <input type="email">
+                    <p>Пароль</p>
+                    <input type="password">
+                    <p>Повторите пароль</p>
+                    <input type="password">
+                </div>
+                <div class="entry__box__button">
+                    <button>
+                        <a href="">Вперед</a>
+                        <img src="img/arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
