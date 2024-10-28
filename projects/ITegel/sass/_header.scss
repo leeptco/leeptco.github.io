@@ -1,0 +1,46 @@
+// _header.scss
+.header {
+    background-color: $background-header;
+    padding: 30px 0;
+
+    &__container {
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    &__nav {
+       
+
+          ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
+
+            @media (max-width: 786px) {
+                flex-direction: column;
+                gap: 10px;
+            }
+          }
+
+        &-link {
+            text-decoration: none;
+            @include responsive-font(14px, 16px, 20px);
+            color: $primary-text-color;
+        }
+    }
+
+    &__search {
+        @include flex-center();
+        gap: 15px;
+    }
+
+    &__input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid $button-border;
+    }
+
+}
+

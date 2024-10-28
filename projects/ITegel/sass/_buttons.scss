@@ -1,0 +1,76 @@
+.header__button {
+    background-color: $background-header;
+    border: 1px solid $button-border;
+    border-radius: 10px;
+    padding: 5px 24px;
+    text-align: center;
+    font-size: 17px;
+
+    &:hover {
+        background-color: $highlight-blue;
+        border: 1px solid $highlight-blue;
+    }
+
+    &-link {
+        color: $primary-text-color;
+    }
+}
+
+.intro__button {
+    @include flex-center();
+    @include responsive-font(14px, 14px, 20px);
+    background-color: $highlight-blue;
+    border: 1px solid $highlight-blue;
+    width: 160px;
+    border-radius: 30px;
+    padding: 12px 24px;
+
+    @media (max-width: 1050px) {
+        width: 110px;
+        padding: 8px 16px;
+    }
+
+
+    &:hover {
+        background-color: $background-header;
+        border: 1px solid $button-border;
+    }
+
+    &-link {
+        color: $white;
+    }
+
+    a:hover {
+        color: $primary-text-color;
+    }
+
+    &-arrow {
+        margin-left: 12px;
+        width: 24px;
+
+        @media (max-width: 1050px) {
+            margin-left: 8px;
+            width: 16px;
+        }
+    }
+}
+
+
+//course
+.course__button {
+    background-color: $highlight-blue;
+    border: 1px solid $highlight-blue;
+    border-radius: 20px;
+    padding: 8px 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: $white;
+
+    &:hover {
+        background-color: $background-header;
+        border: 1px solid $button-border;
+        color: $primary-text-color;
+    }
+}

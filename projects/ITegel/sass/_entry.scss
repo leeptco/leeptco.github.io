@@ -1,0 +1,82 @@
+.entry {
+    border: 2px solid $green;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 600px;
+
+    &__box {
+        margin: 20px;
+        border-radius: 20px;
+        background-color: $background-header;
+        text-align: center;
+        padding: 0 80px;
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            // gap: 240px;
+            padding: 50px 0 30px 0;
+            font-size: 20px;
+
+            &-active {
+                color: $highlight-blue;
+                font-weight: 700;
+            }
+
+            &-disable {
+                color: $primary-text-color;
+            }
+
+        }
+
+        &__input {
+            text-align: left;
+
+            input {
+                width: 100%;
+                border-radius: 15px;
+                padding: 1.5em;
+                border: 1px solid $button-border;
+            }
+        }
+
+
+
+        &__button {
+            padding: 40px;
+           @include flex-center;  
+           justify-content: center;    
+            button {
+                @include flex-center();
+                background-color: $highlight-blue;
+                border: 1px solid $highlight-blue;
+                width: 160px;
+                border-radius: 30px;
+                padding: 12px 24px;
+                color: $white;
+                
+
+                &:hover {
+                    background-color: $background-header;
+                    border: 1px solid $button-border;
+                    color: $primary-text-color;
+                }
+
+                img {
+
+                    margin-left: 8px;
+                    width: 24px;
+                }
+
+                a {
+                    color: inherit; // Унаследовать цвет от кнопки
+                    display: block; // Сделать ссылку блочным элементом
+                    width: 100%; // Занять всю ширину кнопки
+                    height: 100%; // Занять всю высоту кнопки
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
