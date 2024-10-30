@@ -12,19 +12,27 @@ footer {
         
         img {
             margin: 16px 0;
+            @media (max-width: 696px) {
+                width: 80px;
+            }
         }
     }
 
     &__nav {
         margin-top: 3%;
+
         ul {
             list-style: none;
+            @media (max-width: 696px) {
+                padding: 0;
+             }
             
             li {
                 margin: 12px 0;
 
                 a {
                     color: $primary-text-color;
+                    @include responsive-font(12px, 16px, 20px);
                 }
             }
           }
