@@ -16,3 +16,15 @@
       font-size: $large;
     }
   }
+
+ @mixin responsive-margin($small, $medium, $large) {
+    margin: $small 0;
+  
+    @media (min-width: 696px) {
+      margin: $medium 0;
+    }
+  
+    @media (min-width: 1042px) {
+      margin: $large 0;
+    }
+  }
