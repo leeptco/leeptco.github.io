@@ -2,15 +2,24 @@
 .header {
     background-color: $background-header;
     padding: 30px 0;
+    @media (max-width: 696px) {
+        padding: 10px 0;
+    }
 
     &__container {
         @include flex-center();
         justify-content: space-between;
     }
 
-    &__nav {
-       
+    &__logo {
+        img {
+            @media (max-width: 696px) {
+                width: 80px;
+            }
+        }
+    }
 
+    &__nav {
           ul {
             display: flex;
             list-style: none;
@@ -18,15 +27,15 @@
             margin: 0;
             gap: 20px;
 
-            @media (max-width: 786px) {
+            @media (max-width: 696px) {
                 flex-direction: column;
-                gap: 10px;
+                gap: 0;
             }
           }
 
         &-link {
             text-decoration: none;
-            @include responsive-font(14px, 16px, 20px);
+            @include responsive-font(12px, 16px, 20px);
             color: $primary-text-color;
         }
     }
