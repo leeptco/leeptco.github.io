@@ -4,19 +4,30 @@
     margin: 60px auto;
     max-width: 600px;
 
+    @media (max-width: 696px) {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
     &__box {
         margin: 20px;
         border-radius: 20px;
         background-color: $background-header;
         text-align: center;
         padding: 0 80px;
+        @media (max-width: 696px) {
+            margin: 10px;
+            padding: 0 20px;
+        }
 
         &__title {
             display: flex;
             justify-content: space-between;
-            // gap: 240px;
             padding: 50px 0 30px 0;
-            font-size: 20px;
+            @include responsive-font(16px, 16px, 20px);
+            @media (max-width: 696px) {
+                padding: 30px 10px;
+            }
 
             &-active {
                 color: $highlight-blue;
@@ -31,12 +42,19 @@
 
         &__input {
             text-align: left;
-
+            p {
+                @include responsive-font(12px, 14px, 16px);
+            }
             input {
                 width: 100%;
                 border-radius: 15px;
                 padding: 1.5em;
                 border: 1px solid $button-border;
+
+                @media (max-width: 696px) {
+                    width: 90%;
+                    padding: 0.7em;
+                }
             }
         }
 
@@ -74,7 +92,7 @@
                     width: 100%; // Занять всю ширину кнопки
                     height: 100%; // Занять всю высоту кнопки
                     text-align: center;
-                    font-size: 16px;
+                    @include responsive-font(12px, 14px, 16px);
                 }
             }
         }
