@@ -1,0 +1,21 @@
+.calculator {
+    width: 50%; 
+    margin: auto;   
+}
+
+@media only screen and (max-width: 768px) {
+    .calculator {
+        width: 80%;
+    }
+
+    // .calculator__title,
+    // .calculator__result-title,
+    // .calculator__result-value {
+    //     font-size: 1.5rem;
+    // }
+
+    // .calculator__input,
+    // .calculator__button {
+    //     font-size: 1rem; 
+    // }
+}
