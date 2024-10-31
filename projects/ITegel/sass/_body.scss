@@ -213,13 +213,13 @@
                 align-items: baseline;
 
                 &-name {
-                    @include responsive-font(16px, 20px, 20px);
+                    @include responsive-font(14px, 16px, 20px);
                     margin: 12px 0;
                     width: 240px;
                 }
 
                 &-text {
-                    @include responsive-font(16px, 20px, 20px);
+                    @include responsive-font(14px, 16px, 20px);
                 }
 
                 &-logo {
