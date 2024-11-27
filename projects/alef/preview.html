@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="app_preview.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header container">
+                <div class="header__logo">
+                    <img src="img/logo.svg" alt="Логотип Alef">
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li><a href="index.html">Форма</a></li>
+                        <li><a href="preview.html">Превью</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="appPreview">
+            <div class="container">
+                <div class="personal">
+                    <div class="personal__title">
+                        Персональные данные
+                    </div>
+                    <p id="person-info">
+                        {{ person.fio }}, {{ textForAge(person.age) }}
+                    </p>
+                </div>
+
+                <div class="child">
+                    <div class="child__title" v-if="children.length > 0">
+                        Дети
+                    </div>
+                    <div id="children-list">
+                        <div v-for="(child, index) in children" :key="index" class="div_bold">
+                            {{ child.name }}, {{ textForAge(child.age) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                all rights reserved
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

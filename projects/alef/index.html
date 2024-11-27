@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header container">
+                <div class="header__logo">
+                    <img src="img/logo.svg" alt="Логотип Alef">
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li><a href="index.html">Форма</a></li>
+                        <li><a href="preview.html">Превью</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="app">
+            <div class="container">
+                <div class="personal">
+                    <div class="personal__title-bold">
+                        Персональные данные
+                    </div>
+                    <div class="personal__form">
+                        <div class="personal__form__item">
+                            <label>Имя</label>
+                            <input type="text" placeholder="Введите фио" v-model="person.fio">
+                        </div>
+                        <div class="personal__form__item">
+                            <label>Возраст</label>
+                            <input type="number" placeholder="Введите возраст" v-model="person.age" @input="checkPersonAge()">
+                            <p v-if="person.ageWarning">{{ person.ageWarning }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="child__header">
+                        <div class="child__header__title-bold">
+                            Дети (макс.5)
+                        </div>
+                        <div>
+                            <button class="child__header__btn" @click="addNewChild" v-if="children.length < 5"><img
+                                    src="img/plus.svg" alt="">
+                                Добавить ребенка</button>
+                        </div>
+                    </div>
+                    <div class="child__form" v-if="children.length !== 0" v-for="(child, index) in children"
+                        :key="index">
+                        <div class="child__form__item">
+                            <label>Имя</label>
+                            <input type="text" placeholder="Введите имя ребёнка" v-model="child.name"
+                                :id="'childName' + index">
+                        </div>
+                        <div class="child__form__item">
+                            <label>Возраст</label>
+                            <input type="number" placeholder="Введите возраст ребёнка" v-model="child.age"
+                                :id="'childAge' + index" @input="checkChildAge(index)">
+                                <p v-if="child.ageWarning">{{ child.ageWarning }}</p>
+                        </div>
+                        <div class="child__form__btn">
+                            <button class="child_remove" @click="removeChild(index)">удалить</button>
+                        </div>
+                    </div>
+                    <div v-else>
+                        <p>
+                            <br> <br>
+                            Информации о детях нет. Нажмите кнопку "Добавить ребёнка".
+                        </p>
+                    </div>
+                </div>
+
+                <div class="save" v-if="person.fio && person.age">
+                    <button class="save__btn" @click="saveData">
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                all rights reserved
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
