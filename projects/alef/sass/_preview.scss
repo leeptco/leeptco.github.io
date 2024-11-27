@@ -1,0 +1,30 @@
+.personal {
+    &__title {
+        @include title;
+    }
+}
+.child {
+    &__title {
+        @include title;
+    }
+}
+
+#person-info {
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.div_bold {
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: calc(100% - 40px);
+}
+
+#children-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
