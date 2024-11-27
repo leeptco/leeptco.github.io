@@ -1,0 +1,36 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@mixin item {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+}
+
+@mixin item-label {
+    font-size: 13px;
+    color: var(--grey);
+}
+
+@mixin item-input {
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+@mixin btn-brd-p-cntr {
+    border-radius: 100px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
