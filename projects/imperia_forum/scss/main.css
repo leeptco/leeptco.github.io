@@ -1,0 +1,300 @@
+header {
+  background: linear-gradient(var(--color-main), #FFF5DC);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  gap: 2.5rem;
+}
+@media (max-width: 42rem) {
+  header .container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+header .container .header__text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 17rem;
+}
+header .container .header__text__eng {
+  font-size: 0.5rem;
+  color: var(--color-grey);
+}
+header .container .header__logo {
+  display: flex;
+  justify-content: baseline;
+  gap: 1.5rem;
+}
+@media (max-width: 42rem) {
+  header .container .header__logo {
+    order: -1;
+  }
+}
+header .img_logo1 {
+  width: 8.75rem;
+}
+header .img_logo2 {
+  width: 2rem;
+}
+
+main {
+  max-width: 62.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 0.875rem;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media (max-width: 42rem) {
+  main .container {
+    gap: 1.5rem;
+  }
+}
+main .container h1 {
+  font-size: 1.875rem;
+  text-align: center;
+  font-family: "TT_Fors_Bold", Arial, sans-serif;
+}
+main .container h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "TT_Fors_Bold", Arial, sans-serif;
+  margin-bottom: 1.25rem;
+}
+main .container sup {
+  font-size: 0.5rem;
+}
+main .container .main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main .container .main__title {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 42rem) {
+  main .container .main__title {
+    font-size: 1.5rem;
+  }
+}
+main .container .main__preview {
+  text-align: justify;
+}
+main .container .navigation {
+  background-color: var(--color-main);
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 100px;
+  font-family: "TT_Fors_Bold", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  font-size: 0.7rem;
+  padding: 0 3.125rem;
+}
+@media (max-width: 42rem) {
+  main .container .navigation {
+    gap: 0.5rem;
+    font-size: 0.5rem;
+    padding: 0 1.5rem;
+  }
+}
+@media (max-width: 25rem) {
+  main .container .navigation {
+    font-size: 0.45rem;
+    padding: 0 0.7rem;
+  }
+}
+main .container .navigation a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease;
+}
+main .container .navigation a:hover {
+  color: white;
+}
+main .container .place {
+  text-align: center;
+}
+main .container .place__inner {
+  display: grid;
+  grid-template-columns: 1.5rem 3.5rem 1fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 0.5rem;
+  align-items: center;
+  width: 90%;
+}
+@media (max-width: 35rem) {
+  main .container .place__inner {
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .container .place__inner .box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  main .container .place__inner .box2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  main .container .place__inner__icon {
+    text-align: right;
+  }
+  main .container .place__inner__name {
+    text-align: left;
+  }
+}
+main .container .place__inner__text {
+  text-align: left;
+  min-width: 20rem;
+}
+@media (max-width: 35rem) {
+  main .container .place__inner__text {
+    text-align: center;
+  }
+}
+main .container .reglament__text {
+  text-align: left;
+}
+main .container .reglament__text-warning {
+  color: red;
+}
+main .container .timing__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .container .timing__inner-text {
+  text-align: left;
+}
+main .container .timing__inner-text a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease;
+}
+main .container .timing__inner-text a:hover {
+  color: var(--color-second);
+}
+main .container .contact__inner {
+  text-align: left;
+}
+main .container .contact__inner__phone {
+  display: grid;
+  grid-template-columns: 7rem auto;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+main .container .contact__inner__text {
+  margin-top: 1rem;
+}
+main .container .plan__img img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 2.5rem;
+  background: linear-gradient(var(--color-main), #fff5dc);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  gap: 2rem;
+}
+@media (max-width: 42rem) {
+  footer .container {
+    padding: 1rem 1.5rem;
+  }
+}
+footer .container .footer__logo img {
+  width: 9rem;
+}
+@media (max-width: 42rem) {
+  footer .container .footer__logo img {
+    width: 7rem;
+  }
+}
+footer .container .footer__text {
+  text-align: right;
+}
+@media (max-width: 42rem) {
+  footer .container .footer__text {
+    font-size: 0.5rem;
+  }
+}
+footer .container .footer__text a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease;
+}
+footer .container .footer__text a:hover {
+  color: var(--color-second);
+}
+
+@font-face {
+  font-family: "TT_Fors";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/TT_Fors_Trial_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT_Fors_Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/TT_Fors_Trial_Bold.ttf") format("truetype");
+}
+:root {
+  --color-main: #FDCC4B;
+  --color-second: #27339B;
+  --color-grey: #4e4e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "TT_Fors", Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+}
+@media (max-width: 42rem) {
+  .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
