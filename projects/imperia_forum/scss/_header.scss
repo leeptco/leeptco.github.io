@@ -28,6 +28,10 @@ header {
         gap: 0.5rem;
         max-width: 17rem;
 
+        &__rus {
+            font-weight: 500;
+        }
+
         &__eng {
             font-size: 0.5rem;
             color: var(--color-grey);
