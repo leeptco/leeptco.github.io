@@ -1,23 +1,7 @@
-@import "header";
-@import "inner";
-@import "footer";
-
-@font-face {
-  font-family: "TT_Fors";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/font/TT_Fors_Trial_Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "TT_Fors_Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/font/TT_Fors_Trial_Bold.ttf") format("truetype");
-}
 
 :root {
   --color-main: #FDCC4B;
+  --color-main-dark: #dbb75c;
   --color-second: #27339B;
   --color-grey: #4e4e4e;
 }
@@ -25,7 +9,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'TT_Fors', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -39,3 +27,6 @@
   }}
 
 
+  @import "header";
+  @import "inner";
+  @import "footer";
