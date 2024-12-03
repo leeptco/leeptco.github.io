@@ -1,0 +1,12 @@
+@mixin flex_center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin div_title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+

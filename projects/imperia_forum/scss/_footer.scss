@@ -1,0 +1,48 @@
+footer {
+  margin-top: 2.5rem;
+  background: linear-gradient(var(--color-main), #fff5dc);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+
+    @media (max-width: 42rem) {
+        padding: 1rem 1.5rem;
+      }
+
+    .footer__logo {
+      img {
+        width: 9rem;
+
+        @media (max-width: 42rem) {
+            width: 7rem;
+          }
+      }
+    }
+
+    .footer__text {
+      text-align: right;
+
+      @media (max-width: 42rem) {
+        font-size: 0.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        transition:  0.4s ease;
+
+        &:hover {
+            color: var(--color-second);
+        }
+      }
+    }
+  }
+}

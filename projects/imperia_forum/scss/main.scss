@@ -1,0 +1,41 @@
+@import "header";
+@import "inner";
+@import "footer";
+
+@font-face {
+  font-family: "TT_Fors";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/TT_Fors_Trial_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TT_Fors_Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/TT_Fors_Trial_Bold.ttf") format("truetype");
+}
+
+:root {
+  --color-main: #FDCC4B;
+  --color-second: #27339B;
+  --color-grey: #4e4e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT_Fors', Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+
+
+  @media (max-width: 42rem) //42rem = 672px
+  {
+    width: 90%;
+  }}
+
+
