@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
+.container__header {
+  width: 90vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 48rem) {
+  .container__header {
+    width: 92vw;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--main-color);
+  z-index: 10;
+}
+
+.header {
+  max-width: 49rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 0;
+}
+@media (max-width: 96rem) {
+  .header {
+    width: 50%;
+  }
+}
+@media (max-width: 64rem) {
+  .header {
+    padding: 0.875rem 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.logo {
+  font-size: 2.25rem;
+}
+@media (max-width: 48rem) {
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+nav {
+  font-family: "Montserrat";
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+@media (max-width: 48rem) {
+  nav {
+    font-size: 0.7rem;
+  }
+}
+nav ul {
+  display: flex;
+  gap: 1.8125rem;
+}
+@media (max-width: 48rem) {
+  nav ul {
+    gap: 0.875rem;
+  }
+}
+nav ul li {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+@media (max-width: 48rem) {
+  .intro {
+    margin-top: 0;
+  }
+}
+.intro .banner {
+  margin-top: -110px;
+  height: 110%;
+  width: 40vw;
+}
+@media (max-width: 64rem) {
+  .intro .banner {
+    width: 0;
+  }
+}
+.intro .banner__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  z-index: 11;
+}
+@media (max-width: 64rem) {
+  .intro .banner__img {
+    top: 76px;
+    z-index: -1;
+  }
+}
+@media (max-width: 64rem) {
+  .intro .banner img {
+    width: 100%;
+    filter: brightness(30%);
+  }
+}
+.intro .hero {
+  max-width: 49rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 64rem) {
+  .intro .hero {
+    width: 100%;
+    margin: 8% auto;
+  }
+}
+.intro .hero__subtitle {
+  font-family: "Montserrat";
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+@media (max-width: 64rem) {
+  .intro .hero__subtitle {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 48rem) {
+  .intro .hero__subtitle {
+    text-align: center;
+  }
+}
+.intro .hero__list {
+  font-size: 1.5rem;
+  list-style: none;
+}
+@media (max-width: 64rem) {
+  .intro .hero__list {
+    margin: 0 auto;
+  }
+}
+.intro .hero__list li {
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: clamp(0.75rem, 5vw, 1rem);
+  margin: 0.4rem auto;
+}
+.intro .hero__list .hero__highlight {
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-family: "Prata" !important;
+}
+.intro .hero__list img {
+  width: 1.7rem;
+}
+@media (max-width: 48rem) {
+  .intro .hero__list img {
+    width: 1.25rem;
+  }
+}
+.intro .hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+@media (max-width: 64rem) {
+  .intro .hero h1 {
+    text-align: center;
+  }
+}
+
+.button-small {
+  font-size: clamp(0.75rem, 5vw, 1.2rem);
+  max-width: 11.625rem;
+  padding: 2.1rem 3.125rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+@media (max-width: 64rem) {
+  .button-small {
+    padding: 1.5rem 2.2rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 48rem) {
+  .button-small {
+    padding: 1rem 2rem;
+  }
+}
+.button-small:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.whyus {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
+}
+@media (max-width: 64rem) {
+  .whyus {
+    grid-template-columns: 1fr;
+  }
+}
+.whyus__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  z-index: -1;
+}
+.whyus__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.whyus .advantages {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 64rem) {
+  .whyus .advantages {
+    margin: 2.5rem auto;
+  }
+}
+.whyus .advantages ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+.whyus .advantages ul li {
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: clamp(0.75rem, 5vw, 1.3rem);
+}
+@media (max-width: 48rem) {
+  .whyus .advantages ul li img {
+    width: 1.5rem;
+  }
+}
+.whyus .advantages ul hr {
+  height: 1px;
+  color: var(--second-color);
+  margin: 2.5rem auto;
+}
+.whyus .advantages .button-big {
+  width: 100%;
+  max-width: 38.375rem;
+  font-size: clamp(0.75rem, 5vw, 1.5rem);
+  padding: 2rem 0;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+@media (max-width: 48rem) {
+  .whyus .advantages .button-big {
+    padding: 1rem 3rem;
+  }
+}
+.whyus .advantages .button-big:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+  margin: 6.25rem auto;
+  display: flex;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 30px;
+  border: 2px solid var(--hr-color);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+@media (max-width: 64rem) {
+  .contact {
+    border-radius: 1rem;
+    margin: 4rem auto;
+  }
+}
+.contact form {
+  max-width: 49rem;
+  width: 90%;
+  padding: 5% 9%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+@media (max-width: 64rem) {
+  .contact form {
+    margin: 0 auto;
+  }
+}
+.contact form h2 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  color: var(--contact-color);
+  margin-bottom: 0.875rem;
+}
+.contact form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+.contact form .inputs input {
+  width: 100%;
+  font-size: clamp(0.6rem, 5vw, 1.5rem);
+  padding: 0.8rem 2.4rem;
+  border-radius: 4px;
+  color: var(--second-color);
+  border: 2px solid var(--third-color);
+}
+.contact form .checkbox {
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-family: "Montserrat";
+  color: var(--second-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact__button {
+  padding: 2rem 0;
+  color: var(--white);
+  background-color: var(--black);
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
+}
+@media (max-width: 64rem) {
+  .contact__button {
+    padding: 1rem 0;
+  }
+}
+.contact__button:hover {
+  background-color: var(--main-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.contact .contact__consultant {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  height: 110%;
+  z-index: 4;
+}
+@media (max-width: 90rem) {
+  .contact .contact__consultant {
+    left: 65%;
+  }
+}
+@media (max-width: 64rem) {
+  .contact .contact__consultant {
+    display: none;
+  }
+}
+.contact .contact__consultant img {
+  height: 100%;
+  width: auto;
+}
+.contact .contact__building {
+  width: 100%;
+  position: absolute;
+  right: -1%;
+  bottom: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 64rem) {
+  .contact .contact__building {
+    display: none;
+  }
+}
+.contact .contact__building img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 90rem) {
+  .contact .contact__building img {
+    right: -30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+footer hr {
+  height: 1px;
+  color: var(--hr-color);
+}
+footer nav {
+  margin: 2.5rem auto;
+  justify-content: center;
+}
+@media (max-width: 64rem) {
+  footer nav {
+    margin: 1rem auto;
+  }
+}
+footer .footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.5rem auto;
+}
+@media (max-width: 48rem) {
+  footer .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer .footer p {
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-family: "Montserrat";
+}
+footer .footer .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer .social {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+}
+@media (max-width: 48rem) {
+  footer .footer .social {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 2rem;
+  }
+}
+footer .footer .social__icons {
+  display: flex;
+  max-width: 22rem;
+  gap: 2rem;
+}
+@media (max-width: 64rem) {
+  footer .footer .social__icons {
+    gap: 1.2rem;
+  }
+}
+footer .footer .social__icons img {
+  width: 2rem;
+}
+@media (max-width: 48rem) {
+  footer .footer .social__icons img {
+    width: 1.2rem;
+  }
+}
+footer .footer .order {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+footer .footer .order p {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 48rem) {
+  footer .footer .order p {
+    margin-top: 0.5rem;
+  }
+}
+footer .footer .order .button-small {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  padding: 1.2rem 3rem;
+  font-weight: 400;
+}
+footer .footer .order .button-small:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 64rem) {
+  footer .footer .order .button-small {
+    padding: 1.5rem 2.2rem;
+  }
+}
+@media (max-width: 48rem) {
+  footer .footer .order .button-small {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+:root {
+  --main-color: #222222;
+  --second-color: #55565A;
+  --third-color: #d6d6d6;
+  --hover-color: #9c9c9c;
+  --hr-color: #d5c9be;
+  --contact-color: #38535D;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Prata";
+  color: var(--white);
+}
+
+.container {
+  width: 90vw;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+@media (max-width: 48rem) {
+  .container {
+    width: 92vw;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.5sec;
+}
+a:hover {
+  color: var(--hover-color);
+}/*# sourceMappingURL=style.css.map */
