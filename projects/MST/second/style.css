@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Montserrat";
+}
+
+.video-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-section__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem 3rem;
+    color: white;
+    height: 100vh;
+    padding: 1.25rem;
+    position: relative;
+    margin: 0;
+    background: black;
+    mix-blend-mode: hard-light;
+    font-size: clamp(2rem, 10vw, 6rem);  
+}
+
+@media (max-width: 64rem) {
+    .video-text {
+        gap: 0.5rem 2rem;
+        padding: 0.8rem;
+    }}
+
+.video-text__gap {
+    min-width: 16vw;
+    flex: 1;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.5);
+}
