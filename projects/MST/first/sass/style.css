@@ -31,7 +31,7 @@ header {
   }
 }
 @media (max-width: 64rem) {
-  .header
+  .heade
     padding: 0.875rem 0;
     margin: 0 auto;
     width: 100%;
