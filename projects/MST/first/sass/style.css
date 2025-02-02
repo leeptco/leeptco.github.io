@@ -31,7 +31,7 @@ header {
   }
 }
 @media (max-width: 64rem) {
-  .header {
+  .heade
     padding: 0.875rem 0;
     margin: 0 auto;
     width: 100%;
@@ -106,7 +106,7 @@ nav ul li {
 }
 @media (max-width: 64rem) {
   .intro .banner__img {
-    top: 76px;
+    
     z-index: -1;
   }
 }
