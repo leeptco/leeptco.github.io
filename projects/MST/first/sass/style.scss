@@ -1,0 +1,55 @@
+@import 'header';
+@import 'intro';
+@import 'whyus';
+@import 'contact';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+:root {
+    --main-color: #222222;
+    --second-color: #55565A;
+    --third-color: #d6d6d6;
+    --hover-color: #9c9c9c;
+    --hr-color: #d5c9be;
+    --contact-color: #38535D;
+    --white: #fff;
+    --black: #000;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: "Prata";
+    color: var(--white);
+}
+
+.container
+ {
+    width: 90vw;
+    max-width: 100rem;
+    margin:  0 auto;
+
+    @media (max-width: 48rem) {
+        width: 92vw;
+    }
+ }
+
+ a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.5sec;
+
+    &:hover {
+        color: var(--hover-color);
+    }
+ }
