@@ -106,7 +106,7 @@ nav ul li {
 }
 @media (max-width: 64rem) {
   .intro .banner__img {
-    top: 76px;
+    top: 0;
     z-index: -1;
   }
 }
