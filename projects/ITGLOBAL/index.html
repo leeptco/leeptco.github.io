@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кража шариков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Кража шариков</h1>
+    <p>В кладовой хранятся шарики разного количества. Вор хочет украсть их, но мешок имеет ограниченную вместимость. Он
+        действует по двум принципам:
+    <p>1. Жадность – украсть как можно больше, но не превысить вместимость мешка.
+    </p>
+    <p>
+        2. Справедливость – распределить кражу, чтобы из больших запасов брать больше, а из меньших – меньше.
+    </p>
+    <p>
+        Если вместимость мешка позволяет, он забирает все шарики. Если нет, он распределяет их так, чтобы пропорции
+        остались максимально справедливыми.</p>
+    </p>
+    <br>
+
+    <label>Вместимость мешка:</label>
+    <input type="number" id="bagCapacity" placeholder="Введите вместимость мешка">
+
+    <label>Количество шариков (через пробел):</label>
+    <input type="text" id="ballsInput" placeholder="Например: 20 10 30">
+
+    <button onclick="calculateTheft()">Рассчитать</button>
+    <div id="result"></div>
+
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
