@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    margin: 3rem auto;
+}
+h1 {
+    text-align: center;
+}
+input {
+    padding: 8px;
+    margin: 0.5rem 0;
+    width: 95%;
+}
+label {
+    font-weight: 700;
+}
+button {
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+button:hover {
+    background: #0056b3;
+}
+#result {
+    margin-top: 1rem;
+}
